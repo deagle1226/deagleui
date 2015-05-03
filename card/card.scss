@@ -4,8 +4,15 @@
     background: #fff;
     display: block;
     border-radius: 2px;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.1);
+    margin: 0 auto $space-lg auto;
+    padding: 0 $space $space;
 
     &-afro {
-        padding-top: 20px;
+        padding-top: $space;
+    }
+
+    &-pillow {
+        margin-top: $space-lg;
     }
 }

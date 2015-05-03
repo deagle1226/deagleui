@@ -7,5 +7,19 @@
 body {
     background: $background-base;
     font-family: 'Titillium Web', sans-serif;
+    color: $font-color-base;
     //font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    i {
+        color: $accent-color;
+        font-style: normal;
+    }
+}
+
+main#anchor {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
 }

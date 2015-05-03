@@ -1,2 +1,47 @@
+$space: 20px;
+$space-sm: 10px;
+$space-lg: 30px;
+
 // COLORS
 $background-base: #efefef;
+
+$font-color-base: #555;
+
+$accent-color: #5cb85c;
+$accent-color-dark: darken($accent-color, 50%);
+
+// RED
+$background-red:            #d9534f;
+$background-red-hover:      #d2322d;
+$background-red-light:      #f2dede;
+$border-red:                darken(#d43f3a, 5%);
+$border-red-light:          lighten($border-red, 20%);
+$border-red-hover:          darken(#ac2925, 3%);
+$text-red:                  #a94442;
+
+// GREEN
+$background-green:          #5cb85c;
+$background-green-hover:    #47a447;
+$background-green-light:    #dff0d8;
+$border-green:              darken(#4cae4c, 5%);
+$border-green-light:        lighten($border-green, 20%);
+$border-green-hover:        #398439;
+$text-green:                #3c763d;
+
+// BLUE
+$background-blue:           #428bca;
+$background-blue-hover:     #3276b1;
+$background-blue-light:     #d9edf7;
+$border-blue:               darken(#357ebd, 5%);
+$border-blue-light:         lighten($border-blue, 20%);
+$border-blue-hover:         #285e8e;
+$text-blue:                 #31708f;
+
+// ORANGE
+$background-orange:         darken(desaturate(#f0ad4e, 20%), 10%);
+$background-orange-hover:   darken($background-orange, 5%);
+$background-orange-light:   #fcf8e3;
+$border-orange:             darken(#eea236, 5%);
+$border-orange-light:       lighten($border-orange, 20%);
+$border-orange-hover:       #d58512;
+$text-orange:               #8a6d3b;
