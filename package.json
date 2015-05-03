@@ -1,0 +1,25 @@
+{
+  "name": "deagleui",
+  "version": "0.0.1",
+  "description": "Web Component Library",
+  "author": "Dan Eagle <deagle1226@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --watch --config ./webpack.config.js"
+    },
+  "dependencies": {
+    "babel": "^5.2.6",
+    "lodash": "^3.8.0",
+    "normalize.css": "^3.0.3",
+    "react": "^0.13.2"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^1.2.0",
+    "babel-loader": "^5.0.0",
+    "css-loader": "^0.12.0",
+    "sass-loader": "^0.4.2",
+    "style-loader": "^0.12.1",
+    "webpack": "^1.8.11",
+    "webpack-dev-server": "^1.8.2"
+  }
+}

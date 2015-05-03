@@ -1,0 +1,11 @@
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: $background-base;
+    font-family: 'Titillium Web', sans-serif;
+    //font-family: 'Noto Sans', sans-serif;
+}

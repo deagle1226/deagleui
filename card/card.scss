@@ -1,0 +1,11 @@
+@import 'variables';
+
+.card {
+    background: #fff;
+    display: block;
+    border-radius: 2px;
+
+    &-afro {
+        padding-top: 20px;
+    }
+}
