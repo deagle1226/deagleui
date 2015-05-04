@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --watch --config ./webpack.config.js"
-    },
+  },
   "dependencies": {
     "babel": "^5.2.6",
     "lodash": "^3.8.0",
@@ -17,6 +17,7 @@
     "autoprefixer-loader": "^1.2.0",
     "babel-loader": "^5.0.0",
     "css-loader": "^0.12.0",
+    "json-loader": "^0.5.1",
     "sass-loader": "^0.4.2",
     "style-loader": "^0.12.1",
     "webpack": "^1.8.11",

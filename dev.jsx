@@ -1,15 +1,20 @@
 import 'normalize.css';
 import './dev.scss';
 import React from 'react';
+import pkg from 'package.json';
 
 import Card from 'card';
 import Button from 'button';
+import Footer from 'footer';
+import Header from 'header';
 
 let App = React.createClass({
     render() {
         return (
-            <main>
-                <h1>deagle<i>ui</i></h1>
+            <main id="main">
+                <Header>
+                    <Logo />
+                </Header>
                 <Card modifiers="afro" />
                 <Button />
                 <Button modifiers="accent">Accent Button</Button>
@@ -17,7 +22,18 @@ let App = React.createClass({
                     <Button>Button</Button>
                     <Button modifiers="accent">Accent Button</Button>
                 </Card>
+                <Footer>
+                    v{pkg.version} by {pkg.author.split('<')[0]}
+                </Footer>
             </main>
+        );
+    }
+});
+
+let Logo = React.createClass({
+    render() {
+        return (
+            <span className="logo">deagle<i>ui</i></span>
         );
     }
 });
