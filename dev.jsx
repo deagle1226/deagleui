@@ -7,6 +7,7 @@ import Card from 'card';
 import Button from 'button';
 import Footer from 'footer';
 import Header from 'header';
+import Drawer from 'drawer';
 
 let App = React.createClass({
     render() {
@@ -15,6 +16,10 @@ let App = React.createClass({
                 <Header>
                     <Logo />
                 </Header>
+                <Drawer>
+                    <h3>Nav Drawer</h3>
+                    <a href="#">Sample Link</a>
+                </Drawer>
                 <Card modifiers="afro" />
                 <Button />
                 <Button modifiers="accent">Accent Button</Button>

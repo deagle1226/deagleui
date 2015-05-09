@@ -27,17 +27,19 @@ main#main {
     margin: 0 auto;
     padding: 80px 0 80px 0;
     max-width: 1024px;
+    width: 90%;
+    transition: all 150ms ease-in-out;
 }
 
 .logo {
     display: inline-block;
     vertical-align: middle;
     font-size: 24px;
-    line-height: 60px;
+    line-height: 55px;
     padding: 0 $space;
 
     * {
-        line-height: 60px;
+        line-height: 55px;
         display: inline-block;
     }
 
@@ -45,5 +47,15 @@ main#main {
         color: $accent-color;
         font-style: normal;
         font-weight: bold;
+    }
+}
+
+.header {
+    padding-left: 40px;
+}
+
+@media (min-width: $width-drawer-out) {
+    main#main {
+        padding-left: $drawer-width;
     }
 }

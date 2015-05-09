@@ -6,4 +6,9 @@
 	line-height: 60px;
 	text-align: center;
 	border-top: 1px solid $accent-color;
+	transition: all 150ms ease-in-out;
+
+	@media (min-width: $width-drawer-out) {
+         left: $drawer-width + $space;
+	}
 }
