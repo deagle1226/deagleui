@@ -11,7 +11,7 @@
 	z-index: 98;
 	padding: 0 $space;
 	transform: translateX(-$drawer-width);
-	transition: all 150ms ease-in-out;
+	transition: all 300ms ease-in-out;
 
 	&-out {
 		transform: translateX(0px);
@@ -19,7 +19,16 @@
 					0px 9999px 0px 9999px rgba(0,0,0,0.2);
 
 		.navicon {
-			transform: translateX(0px) !important;
+			transform: translateX(0px) rotate(180deg) !important;
+
+			&:before {
+				width: 60% !important;
+				transform: rotate(45deg) translateX(10px) translateY(-7px);
+			}
+			&:after {
+				width: 60% !important;
+				transform: rotate(-45deg) translateX(10px) translateY(7px);
+			}
 		}
 	}
 
@@ -31,15 +40,17 @@
 	.navicon {
 		position: fixed;
 		z-index: 99;
-		top: -43px;
+		top: -42px;
 		left: 10px;
-		transition: all 150ms ease-in-out;
+		transition: all 300ms ease-in-out;
 		transform: translateX($drawer-width);
-		height: 24px;
-		width: 35px;
+		height: 22px;
+		width: 30px;
+		opacity: 0.5;
 
 		&:hover {
 			cursor: pointer;
+			opacity: 0.75;
 		}
 
 		@media (min-width: $width-drawer-out) {
@@ -47,20 +58,23 @@
 		}
 
 		.navicon_inner {
-			height: 2px;
+			height: 4px;
 			width: 100%;
 			background: #fff;
 			position: absolute;
-			top: calc(50% - 1px);
+			top: calc(50% - 2px);
+			border-radius: 2px;
 		}
 
 		&:before, &:after {
 			content: '';
 			display: inline-block;
-			height: 2px;
+			height: 4px;
+			transition: all 300ms ease-in-out;
 			width: 100%;
 			background: #fff;
 			position: absolute;
+			border-radius: 2px;
 		}
 
 		&:before {
